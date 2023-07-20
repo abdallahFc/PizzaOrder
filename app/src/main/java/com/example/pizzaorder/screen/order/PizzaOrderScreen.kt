@@ -34,9 +34,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.pizzaorder.R
 import com.example.pizzaorder.composable.PizzaToppingItem
-import com.example.pizzaorder.screen.order.composable.BreadPager
+import com.example.pizzaorder.screen.order.composable.Pager
 import com.example.pizzaorder.screen.order.composable.CartButton
-import com.example.pizzaorder.screen.order.composable.PizzaOrderingTopBar
+import com.example.pizzaorder.screen.order.composable.PizzaOrderTopBar
 import com.example.pizzaorder.screen.order.composable.PizzaSizes
 import com.example.pizzaorder.ui.theme.PizzaOrderTheme
 
@@ -62,7 +62,7 @@ fun PizzaOrderingContent(
 ) {
     Scaffold(
         containerColor = Color.White,
-        topBar = { PizzaOrderingTopBar() }
+        topBar = { PizzaOrderTopBar() }
     ) { paddings ->
 
         Column(
@@ -77,7 +77,7 @@ fun PizzaOrderingContent(
 
             val pagerState = rememberPagerState(0)
 
-            BreadPager(
+            Pager(
                 pagerState = pagerState,
                 breads = state.breads,
                 modifier = Modifier

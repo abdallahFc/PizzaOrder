@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PizzaOrderingTopBar() {
+fun PizzaOrderTopBar() {
     CenterAlignedTopAppBar(
         title = {
             Text(

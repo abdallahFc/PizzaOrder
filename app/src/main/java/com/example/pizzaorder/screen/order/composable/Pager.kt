@@ -22,7 +22,7 @@ import com.example.pizzaorder.screen.order.PizzaSize
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun BreadPager(
+fun Pager(
     pagerState: PagerState,
     breads: List<Bread>,
     modifier: Modifier = Modifier
